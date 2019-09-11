@@ -19,7 +19,7 @@ class ProgrammingLanguage:
 
         return self.typing == "Dynamic"
 
-    def run_test():
+    def run_test(self):
         """Run test on ProgrammingLanguage class."""
 
         ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
