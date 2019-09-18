@@ -10,3 +10,5 @@ def main():
     taxi.start_fare()
     taxi.drive(100)
     print(taxi)
+
+main()
