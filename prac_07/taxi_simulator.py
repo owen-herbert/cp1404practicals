@@ -1,12 +1,10 @@
 """Taxi simulator"""
 
-
 from prac_06.car import Car
 from prac_07.taxi import Taxi
 from prac_07.silver_service_taxi import SilverServiceTaxi
 
 MENU = "q)uit, c)hoose taxi, d)rive"
-
 
 def main():
 
@@ -42,13 +40,9 @@ def main():
     print("Taxis are now:")
     display_taxis(taxis)
 
-
-
-
 def display_taxis(taxis):
     for i, taxi in enumerate(taxis):
         print("{} - {}".format(i, taxi))
-
 
 def run_tests():
     bus = Car("Datsun", 180)
@@ -80,4 +74,3 @@ def run_tests():
     print(sst, sst.get_fare())
 
 main()
-
