@@ -4,7 +4,7 @@ from prac_06.car import Car
 from random import randint
 
 class UnreliableCar(Car):
-    reliability = float(1.00)
+    reliability = float(49.00)
 
     def __init__(self, name, fuel, reliability):
         super().__init__(name, fuel)
