@@ -4,7 +4,7 @@ from prac_06.car import Car
 from prac_08.taxi import Taxi
 from prac_08.silver_service_taxi import SilverServiceTaxi
 
-MENU = "q)uit, c)hoose taxi, d)rive"
+MENU = "[Q]- Quit, [C] - Choose taxi, [D] - Drive"
 
 print("Let's drive!")
 def main():
