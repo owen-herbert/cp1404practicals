@@ -9,8 +9,7 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 print("Let's drive!")
 def main():
     total_bill = 0
-    taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2),
-             SilverServiceTaxi("Hummer", 200, 4)]
+    taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer", 200, 4)]
 
     print(MENU)
     menu_choice = input(">>> ").lower()
@@ -26,8 +25,7 @@ def main():
             distance_to_drive = float(input("Drive how far? "))
             current_taxi.drive(distance_to_drive)
             trip_cost = current_taxi.get_fare()
-            print("Your {0} trip cost you ${1}".format(current_taxi.name,
-                                                         trip_cost))
+            print("Your {0} trip cost you ${1}".format(current_taxi.name, trip_cost))
             total_bill += trip_cost
         else:
             print("Invalid option")
